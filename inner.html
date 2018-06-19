@@ -11,27 +11,59 @@
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
+
+          <a class="main-header-logo" href="index.html">
+            <img src="#" width="138px" height="70px" alt="Логотип">
+          </a>
+
           <li><a href="#">Карта штата</a></li>
           <li class="hotels">Гостиницы</li>
         </ul>
-        <a class="main-header-logo" href="index.html">
-          <img src="#" width="138px" height="70px" alt="Логотип">
-        </a>
       </nav>
     </header>
 
-    <!--Здесь будет форма-->
-      <a class="button" href="#">Показать</a>
-      </div>
+    <div class="search-tools" aria-label="Параметры поиска отеля">
 
-      <div class="">
+      <form action="https://echo.htmlacademy.ru" method="get">
+
+        <fieldset>
+
+          <label>Инфраструктура<br>
+          <label><input type="checkbox" name="swimming-pool" checked></label>Бассейн<br>
+          <label><input type="checkbox" name="parking-lot">Парковка</label><br>
+          <label><input type="checkbox" name="wi-fi">Wi-Fi</label></label><br>
+
+          <label>Тип жилья:<br>
+          <label><input type="checkbox" name="hotel" checked>Гостиница</label><br>
+          <label><input type="checkbox" name="motel" checked>Мотель</label><br>
+          <label><input type="checkbox" name="apartment" checked>Апартаменты</label></label><br>
+
+        <label>Стоимость в сутки (Р):<br>
+          <div class="price-range-box">
+              <label>От<input type="number" min="0" max="3000" name="price-min" placeholder="0"></label>
+              <label>До<input type="number" min="0" max="3000" name="price-max" placeholder="3000"></label>
+           </div><br>
+          <input type="range" name="pricerange" min="0" max="3000"> <!--Двойной ползунок будет потом (я надеюсь...)-->
+        </label>
+        <br>
+      <button class="button" type="submit">Показать</a>
+      </fieldset>
+      </form>
+
+    </div>
+
+      <div class="results-header">
         <b>Найдено: 3<b>
         <span>Сортировка</span>
           <ul>
-            <li>По цене</li>
-            <li>По типу</li>
-            <li>По рейтингу</li>
+            <ul class="sort-list">
+           <li><a href="#">По цене</a></li>
+           <li><a href="#">По типу</a></li>
+           <li><a href="#">По рейтингу</a></li>
+         </ul>
+         <!-- Здесь будут стрелочки -->
       </div>
+
       <div class="results">
         <section class="amara">
           <img class="amara-photo" src="img/amara-photo.jpg" width="135" height="90" alt="Amara Resort & Spa">
@@ -77,9 +109,9 @@
       <span class="footer-hashtag">#VISITSEDONA</span>
       <div class="footer-social">
         <ul>
-          <li><a class="social button" href="#">Твиттер</a></li>
-          <li><a class="social button" href="#">Фейсбук</a></li>
-          <li><a class="social button" href="#">Ютуб</a></li>
+          <li><a class="social button" href="#" title="Твиттер">Твиттер</a></li>
+          <li><a class="social button" href="#" title="Фейсбук">Фейсбук</a></li>
+          <li><a class="social button" href="#" title="Ютуб">Ютуб</a></li>
         </ul>
       </div>
       <p class="footer-copyright">
