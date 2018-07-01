@@ -12,25 +12,23 @@
 
 <div class="relative-position">
 
-    <header class="main-header">
-      <nav class="main-naviagation">
-          <ul class="site-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-
-            <div class="logo">
-              <img src="img/index-logo.png" width="138px" height="70px" alt="Логотип">
-            </div>
-
-            <li><a href="#">Карта штата</a></li>
-           <li><a href="inner.html">Гостиницы</a></li>
-          </ul>
-      </nav>
-    </header>
+  <header class="header">
+    <nav class="main-naviagation">
+        <ul class="site-navigation">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li><img class="logo" src="img/index-logo.png" width="138px" height="70px" alt="Логотип"></li>
+          <li><a href="#">Карта штата</a></li>
+         <li><a href="inner.html">Гостиницы</a></li>
+        </ul>
+    </nav>
+  </header>
 
     <main class="container">
 
       <h1 class="visually-hidden">Седона</h1>
+
+      <div class="sedona"><img src="img/main-page-photo.jpg" width="1200px" height="508px" alt="Добро пожаловать в Седону!"></div>
 
       <section class="intro">
         <div class="intro-text">
@@ -98,11 +96,7 @@
 
       <fieldset class="search-form-wrapper">
 
-      <a href="inner.html" class="search-header">
-        <div class="search-legend-wrapper">
-          <legend class="search-legend">Поиск гостиницы в Седоне</legend>
-        </div>
-      </a>
+          <legend><a class="search-header" href="inner.html">Поиск гостиницы в Седоне</a></legend>
 
         <div class="input-wrapper">
 
@@ -136,9 +130,7 @@
 
       </div>
 
-      <div class="button-wrapper">
-        <button class="button find-btn" type="submit"><div class="find">Найти</div></button>
-      </div>
+        <button class="button find-btn" type="submit">Найти</button>
 
     </fieldset>
     </form>

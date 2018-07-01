@@ -30,39 +30,26 @@ a {
   cursor: pointer
 }
 
-.main-header {
+.header {
   font-family: inherit;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
   width: 1200px;
-  height: 564px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: #ffffff;
-  background-image: url("../img/main-page-photo.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
-}
-
-.inner-header {
-  font-family: inherit;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  width: 1200px;
-  height: 273px;
+  height: 70px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  background-color: transparent;
+}
 
-  background-color: #ffffff;
-  background-image: url("../img/search-background.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
+.sedona {
+  width: 1200px;
+  height: 508px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -15px;
 }
 
 .site-navigation a {
@@ -142,7 +129,6 @@ a {
   line-height: 36px;
 }
 
-.input,
 .input {
   font-family: inherit;
   font-size: 14px;
@@ -169,8 +155,11 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  width: 458px;
+  height: 58px;
+  display: block;
   text-align: center;
-  vertical-align: middle;
+  margin: auto;
 }
 
 .find-btn:hover {
@@ -187,12 +176,15 @@ a {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  display: block;
+  width: 570px;
+  height: 85px;
+  text-align: center;
   color: #ffffff;
   background-color: #766357;
-  text-align: center;
 }
 
-.search-legend-wrapper:hover {
+.search-header:hover {
   background-color: #604e43;
 }
 
@@ -278,22 +270,17 @@ a {
   border: 2px solid #ffffff;
   border-radius: 3px;
   cursor: pointer;
-  /*margin-top: 25px;*/
   margin-left: 85px;
-}
-
-.search-button-wrapper {
-  margin-top: 25px;
-  margin-left: 85px;
-
   box-sizing: border-box;
-  }
+}
 
 .price-range-box {
   height: 36px;
-  margin-top: -10px;
+  margin-top: -20px;
   border: 2px solid #ffffff;
   border-radius: 3px;
+  display: flex;
+  align-items: baseline;
   box-sizing: border-box;
 }
 
@@ -325,17 +312,17 @@ a {
   border-bottom: 1px #81b3d2 dotted;
 }
 
+.sort-list a:active {
+  color: #81b3d2;
+  border: none;
+}
+
 .sort-list a:hover {
   color: #81b3d2;
 }
 
 .sort-list a:focus {
   color: #000000;
-}
-
-.sort-list a:active {
-  color: #81b3d2;
-  border-bottom: none;
 }
 
 .results-header {
@@ -361,6 +348,11 @@ a {
 }
 
 .more {
+  display: block;
+  width: 110px;
+  height: 26px;
+  padding-top: 2px;
+  box-sizing: border-box;
   background-color: #81b3d2;
   border: none;
 }
@@ -369,12 +361,16 @@ a {
   background-color: #669ec0;
 }
 
-.more-btn:focus {
+.more:focus {
   color: #94b9d2;
   background-color: #669ec0;
 }
 
 .book {
+  width: 142px;
+  height: 26px;
+  padding-top: 2px;
+  box-sizing: border-box;
   background-color: #766357;
   border: none;
 }
@@ -383,7 +379,7 @@ a {
   background-color: #604e43;
 }
 
-.book-btn:focus {
+.book:focus {
  color: #928a85;
 }
 
@@ -444,18 +440,25 @@ a {
 /*Хэдер*/
 
 .main-navigation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 1200px;
-  height: 56px;
+  height: 70px;
+  margin: 0;
+  background-color: transparent;s
+  outline: 1px solid #ff8800;
 }
 
 .site-navigation {
   display: flex;
   width: 1200px;
-  min-height: 70px;
-  margin: auto;
+  align-content: flex-start;
+  min-height: 56px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: white;
 }
 
 .site-navigation li {
@@ -467,9 +470,9 @@ a {
 }
 
 .logo {
-  width: 240px;
-  height: 70px;
-  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 531px;
 }
 
 /*Вступление*/
@@ -601,31 +604,33 @@ a {
   padding: 0;
 }
 
-.search-legend-wrapper {
+.search-header {
+  display: block;
   width: 570px;
   height: 85px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 28px;
   box-sizing: border-box;
   background-color: #766357;
 }
 
-.search-legend {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .input-wrapper {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
   width: 458px;
-  min-height: 170px;
+  min-height: 172px;
   margin: auto;
-  margin-top: 58px;
+  margin-top: 55px;
+  margin-bottom: 56px;
 }
 
 .input-wrapper span {
@@ -635,7 +640,9 @@ a {
 
 .span-date input {
   width: 345px;
-  min-height: 35px;
+  min-height: 38px;
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .span-number input {
@@ -650,10 +657,6 @@ a {
   justify-content: space-between;
 }
 
-.numbers {
-  display: flex;
-  justify-content: space-between;
-}
 
 .numbers-1 {
   display: flex;
@@ -665,23 +668,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 178px;
-}
-
-/*Кнопка поиска*/
-
-.find {
-  width: 458px;
-  height: 58px;
-  text-align: center;
-  box-sizing: border-box;
-  padding-top: 15px;
-}
-
-.button-wrapper {
-  box-sizing: border-box;
-  margin-top: 55px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /*Подвал*/
@@ -736,17 +722,22 @@ a {
 /*Фильтры поиска отеля*/
 
 .search-tools {
-  width: 1056px;
+  width: 1200px;
+  height: 217px;
   min-height: 160px;
   margin: auto;
-  position: absolute;
-  top: 83px;
-  right: 105px;
+
+  background-color: #81b3d2;
+  background-image: url("../img/search-background.jpg");
+  background-repeat: no-repeat;
 }
 
 .main-search {
   width: 1056px;
   min-height: 160px;
+  margin-top: -14px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
 }
 
@@ -755,6 +746,7 @@ a {
   flex-direction: column;
   padding: 0;
   margin: 0;
+  margin-top: 28px;
   box-sizing: border-box;
 }
 
@@ -796,42 +788,39 @@ a {
   justify-content: space-between;
   min-height: 98px;
 }
-/*Блок "От-до"*/
 
-.number-box-wrap {
-  display: flex;
-  width: 100%;
-  min-height: 20px;
-  margin-top: 5px;
-}
+/*Блок "От-до"*/
 
 .number-wrap {
   display: flex;
-  width: 158px;
+  width: 155px;
+  margin: auto;
   box-sizing: border-box;
 }
 
-.from {
-  padding-left: 65px;
+.number-wrap:first-child {
+  padding-left: 64px;
+  border-right: 2px solid white;
 }
 
-.to {
+.number-wrap:last-child {
   padding-left: 52px;
   padding-right: 9px;
 }
 
-.number-range {
+.pricing .input  {
+  width: 45px;
+  height: 21px;
   margin-left: 3px;
+  box-sizing: border-box;
 }
 
 /*Ползунок*/
 
 .pricerange {
   width: 100%;
-}
-
-.pricerange-wrap {
   margin-top: -10px;
+  box-sizing: border-box;
 }
 
 /*Сортировка результатов*/
@@ -920,24 +909,10 @@ a {
 
 /*Кнопки*/
 
-.more {
-  width: 110px;
-  height: 26px;
-  padding-top: 2px;
-  box-sizing: border-box;
-}
-
 .options {
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
-}
-
-.book {
-  width: 142px;
-  height: 26px;
-  padding-top: 2px;
-  box-sizing: border-box;
 }
 
 /*Футер*/

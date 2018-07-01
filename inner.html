@@ -10,20 +10,15 @@
 
   <body class="inner-page">
 
-    <header class="inner-header">
+    <header class="header">
       <nav class="main-naviagation">
-        <ul class="site-navigation">
-          <li><a href="#">Информация</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <div class="logo">
-          <a href="index.html">
-            <img src="img/index-logo.png" width="138px" height="70px" alt="Логотип">
-          </div>
-          </a>
-
-          <li><a href="#">Карта штата</a></li>
-          <li class="present-page">Гостиницы</li>
-        </ul>
+          <ul class="site-navigation">
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="index.html"><img class="logo" src="img/index-logo.png" width="138px" height="70px" alt="Логотип"></a></li>
+            <li><a href="#">Карта штата</a></li>
+           <li><a href="inner.html">Гостиницы</a></li>
+          </ul>
       </nav>
     </header>
 
@@ -54,16 +49,12 @@
             <div class="tools-wrap-2">
           <legend>Стоимость в сутки (Р):</legend><br>
           <div class="price-range-box">
-              <div class="number-box-wrap">
-                <div class="number-wrap from"><span>От</span><input class="input number-range" type="number" min="0" max="3000" name="price-min" placeholder="0"></div>
-                <div class="number-wrap to"><span>До</span><input class="input number-range" type="number" min="0" max="3000" name="price-max" placeholder="3000"></div>
-              </div>
-         </div><br>
-          <div class="pricerange-wrap">
-            <input class="pricerange" type="range" name="pricerange" min="0" max="3000"> <!--Двойной ползунок будет потом (я надеюсь...)-->
-          </div>
+                <span class="number-wrap">От<input class="input" type="number" min="0" max="3000" name="price-min" placeholder="0"></span>
+                <span class="number-wrap">До<input class="input" type="number" min="0" max="3000" name="price-max" placeholder="3000"></span>
+          </div><br>
+            <input class="pricerange" type="range" name="pricerange" min="0" max="3000">
         </div>
-          <div class="search-button-wrpapper"><button class="search-button" type="submit">Показать</button></div>
+          <button class="search-button" type="submit">Показать</button>
          </div>
         </fieldset><br>
 
@@ -95,8 +86,8 @@
               <span>От 4000 Р.</span>
           </div>
           <div class="options">
-              <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
-              <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+              <a class="more" href="#">Подробнее</a>
+              <a class="book" href="#">Забронировать</a>
           </div>
           </div>
            <div class="rating">
@@ -115,8 +106,8 @@
               <span>От 3000 Р.</span>
             </div>
            <div class="options">
-              <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
-              <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+              <a class="more" href="#">Подробнее</a>
+              <a class="book" href="#">Забронировать</a>
           </div>
           </div>
           <div class="rating">
@@ -135,8 +126,8 @@
             <span>От 2000 Р.</span>
           </div>
           <div class="options">
-            <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
-            <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+            <a class="more" href="#">Подробнее</a>
+            <a class="book" href="#">Забронировать</a>
           </div>
           </div>
           <div class="rating">
