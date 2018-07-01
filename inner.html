@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="inner-page">
 
-    <header class="main-header">
+    <header class="inner-header">
       <nav class="main-naviagation">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
-
-          <a class="main-header-logo" href="index.html">
-            <img src="#" width="138px" height="70px" alt="Логотип">
+          <div class="logo">
+          <a href="index.html">
+            <img src="img/index-logo.png" width="138px" height="70px" alt="Логотип">
+          </div>
           </a>
 
           <li><a href="#">Карта штата</a></li>
@@ -30,99 +31,126 @@
 
       <form class="main-search" action="https://echo.htmlacademy.ru" method="get">
 
-        <fieldset>
+        <fieldset class="fieldset structure">
           <legend>Инфраструктура:</legend><br>
+          <div class="variants">
           <label><input type="checkbox" name="swimming-pool" checked>Бассейн</label><br>
           <label><input type="checkbox" name="parking-lot">Парковка</label><br>
-          <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+          <label><input type="checkbox" name="wi-fi">Wi-Fi</span>
+          </div>
         </fieldset><br>
 
-        <fieldset>
+        <fieldset class="fieldset housing">
           <legend>Тип жилья:</legend><br>
+          <div class="variants">
           <label><input type="checkbox" name="hotel" checked>Гостиница</label><br>
           <label><input type="checkbox" name="motel" checked>Мотель</label><br>
-          <label><input type="checkbox" name="apartment" checked>Апартаменты</label>
+          <label><input type="checkbox" name="apartment" checked>Апартаменты</span>
+          </div>
         </fieldset><br>
 
-        <fieldset>
+        <fieldset class="fieldset pricing">
+          <div class="tools-wrap">
+            <div class="tools-wrap-2">
           <legend>Стоимость в сутки (Р):</legend><br>
           <div class="price-range-box">
-              <label>От<input type="number" min="0" max="3000" name="price-min" placeholder="0"></label>
-              <label>До<input type="number" min="0" max="3000" name="price-max" placeholder="3000"></label>
-           </div><br>
-          <input type="range" name="pricerange" min="0" max="3000"> <!--Двойной ползунок будет потом (я надеюсь...)-->
+              <div class="number-box-wrap">
+                <div class="number-wrap from"><span>От</span><input class="input number-range" type="number" min="0" max="3000" name="price-min" placeholder="0"></div>
+                <div class="number-wrap to"><span>До</span><input class="input number-range" type="number" min="0" max="3000" name="price-max" placeholder="3000"></div>
+              </div>
+         </div><br>
+          <div class="pricerange-wrap">
+            <input class="pricerange" type="range" name="pricerange" min="0" max="3000"> <!--Двойной ползунок будет потом (я надеюсь...)-->
+          </div>
+        </div>
+          <div class="search-button-wrpapper"><button class="search-button" type="submit">Показать</button></div>
+         </div>
         </fieldset><br>
 
-      <button class="button" type="submit">Показать</a>
             </form>
 
     </div>
 
       <div class="results-header">
+        <div class="header-wrapper">
         <b>Найдено: 3</b>
         <span>Сортировка:</span>
-          <ul>
             <ul class="sort-list">
            <li><a href="#">По цене</a></li>
            <li><a href="#">По типу</a></li>
            <li><a href="#">По рейтингу</a></li>
          </ul>
          <!-- Здесь будут стрелочки -->
+       </div>
       </div>
 
       <div class="results">
-      <div>
-        <section class="amara">
+      <div class="result-wrapper">
+        <section class="result amara">
           <img class="amara-photo" src="img/amara-photo.jpg" width="135" height="90" alt="Amara Resort & Spa">
-          <h2><a href="#">Amara Resort & Spa</a></h2>
-          <span>Гостиница</span>
-          <span>От 4000 Р.</span>
+          <div class="more-info">
+            <h2><a href="#">Amara Resort & Spa</a></h2>
+          <div class="description">
+              <span>Гостиница</span>
+              <span>От 4000 Р.</span>
+          </div>
           <div class="options">
-            <a href="#">Продробнее</a>
-            <a href="#">Забронировать</a>
+              <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
+              <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+          </div>
           </div>
            <div class="rating">
              <!-- Здесь будут звёздочки -->
-             <span>Рейтинг: 8,5</span>
+             <div class="rating-span"><span>Рейтинг: 8,5</span></div>
            </div>
         </section>
       </div>
-      <div>
-        <section class="desert">
+      <div class="result-wrapper">
+        <section class="result desert">
           <img class="desert-photo" src="img/desert-photo.jpg" width="135" height="90" alt="Desert Quail Inn">
-          <h2><a href="#">Desert Quail Inn</a></h2>
-          <span>Мотель</span>
-          <span>От 3000 Р.</span>
-          <div class="options">
-            <a href="#">Продробнее</a>
-            <a href="#">Забронировать</a>
+            <div class="more-info">
+              <h2><a href="#">Desert Quail Inn</a></h2>
+            <div class="description">
+              <span>Мотель</span>
+              <span>От 3000 Р.</span>
+            </div>
+           <div class="options">
+              <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
+              <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+          </div>
           </div>
           <div class="rating">
             <!-- Здесь будут звёздочки -->
-            <span>Рейтинг: 8,9</span>
-          </div>
-        </section>
-      <div>
-        <section class="villas">
-          <img class="villas-photo" src="img/villas-photo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
-          <h2><a href="#">Villas at Poco Diablo</a></h2>
-          <span>Апартаменты</span>
-          <span>От 2000 Р.</span>
-          <div class="options">
-            <a href="#">Продробнее</a>
-            <a href="#">Забронировать</a>
-          </div>
-          <div class="rating">
-            <!-- Здесь будут звёздочки -->
-            <span>Рейтинг: 9,2</span>
+            <div class="rating-span"><span>Рейтинг: 8,9</span></div>
           </div>
         </section>
       </div>
-    </div>
+      <div class="result-wrapper"s>
+        <section class="result villas">
+          <img class="villas-photo" src="img/villas-photo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+          <div class="more-info">
+            <h2><a href="#">Villas at Poco Diablo</a></h2>
+          <div class="description">
+            <span>Апартаменты</span>
+            <span>От 2000 Р.</span>
+          </div>
+          <div class="options">
+            <a class="more-btn" href="#"><div class="more">Подробнее</div></a>
+            <a class="book-btn" href="#"><div class="book">Забронировать</div></a>
+          </div>
+          </div>
+          <div class="rating">
+            <!-- Здесь будут звёздочки -->
+            <div class="rating-span"><span>Рейтинг: 9,2</span></div>
+          </div>
+        </section>
+      </div>
+      </div>
 
       </main>
 
-    <footer class="main-footer">
+    <footer class="footer inner-footer">
+      <div class="footer-wrapper">
       <span class="footer-hashtag">#VISITSEDONA</span>
       <div class="footer-social">
         <ul class="social-buttons">
@@ -135,6 +163,7 @@
         Website by
         <a class="button-copyright" href="https://up.htmlacademy.ru">HTML Academy</a>
       </p>
+      </div>
      </footer>
 
   </body>
