@@ -446,7 +446,6 @@ a {
 .main-navigation {
   width: 1200px;
   height: 56px;
-  outline: 1px solid #ff8800;
 }
 
 .site-navigation {
@@ -457,7 +456,6 @@ a {
   padding: 0;
   box-sizing: border-box;
   background-color: transparent;
-  outline: 1px solid #ff8800;
 }
 
 .site-navigation li {
@@ -466,7 +464,6 @@ a {
   margin: 0;
   padding-top: 14px;
   box-sizing: border-box;
-  outline: 1px solid #ff8800;
 }
 
 .logo {
@@ -482,18 +479,15 @@ a {
   margin: auto;
   padding-top: 42px;
   padding-bottom: 38px;
-  outline: 1px solid #ff8800;
 }
 
 .intro-text {
   margin: auto;
   width: 492px;
-  outline: 1px solid #ff8800;
 }
 
 .intro p {
   padding-top: 10px;
-  outline: 1px solid #ff8800;
 }
 
 /*Причины посетить*/
@@ -502,7 +496,6 @@ a {
   width: 1200px;
   margin: auto;
   box-sizing: border-box;
-  outline: 1px solid #ff8800;;
 }
 
 .reasons-list {
@@ -512,14 +505,12 @@ a {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid #ff8800;
 }
 
 .reasons-list li {
   box-sizing: border-box;
   width: 400px;
   height: 256px;
-  outline: 1px solid #ff8800;
 }
 
 .reason h2 {
@@ -527,38 +518,31 @@ a {
   margin: auto;
   margin-top: 47px;
   margin-bottom: 23px;
-  outline: 1px solid #ff8800;
 }
 
 .reason p {
   margin: auto;
   margin-top: 22px;
-  outline: 1px solid #ff8800;
 }
 
 .reason-1 p {
   width: 290px;
-  outline: 1px solid #ff8800;
 }
 
 .reason-2 p {
   width: 310px;
-  outline: 1px solid #ff8800;
 }
 
 .reason-3 p {
   width: 210px;
-  outline: 1px solid #ff8800;
 }
 
 .reason-4 p {
   width: 265px;
-  outline: 1px solid #ff8800;
 }
 
 .reason-5 p {
   width: 255px;
-  outline: 1px solid #ff8800;
 }
 
 /*Преимущества Седоны*/
@@ -569,7 +553,6 @@ a {
   min-height: 330px;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid #ff8800;
 }
 
 .features-list li {
@@ -579,14 +562,12 @@ a {
 
 .features-list h2 {
   margin-top: 160px;
-  outline: 1px solid #ff8800;
 }
 
 .features-list p {
   width: 288px;
   margin: auto;
   margin-top: 25px;
-  outline: 1px solid #ff8800;
 }
 
 /*Предложение*/
@@ -598,18 +579,18 @@ a {
   padding-top: 50px;
   box-sizing: border-box;
   position: relative;
-  outline: 1px solid #ff8800;
 }
 
 .offer p {
   margin-top: 23px;
-  outline: 1px solid #ff8800;
 }
 
 /*Форма поиска*/
 
 .hotel-search-form {
   position: absolute;
+  left: 316px;
+  bottom: 198px;
 }
 
 .search-form-wrapper {
@@ -618,10 +599,6 @@ a {
   margin: auto;
   box-sizing: border-box;
   padding: 0;
-  position: absolute;
-  bottom: 213px;
-  left: 350px;
-  outline: 1px solid #ff8800;
 }
 
 .search-legend-wrapper {
@@ -631,7 +608,6 @@ a {
   padding-top: 28px;
   box-sizing: border-box;
   background-color: #766357;
-  outline: 1px solid #ff8800;
 }
 
 .search-legend {
@@ -646,17 +622,15 @@ a {
   justify-content: space-between;
   align-content: space-between;
   flex-wrap: wrap;
-  width: 457px;
+  width: 458px;
   min-height: 170px;
   margin: auto;
   margin-top: 58px;
-  outline: 1px solid #ff8800;
 }
 
 .input-wrapper span {
   align-self: baseline;
   padding: 0;
-  outline: 1px solid #ff8800;
 }
 
 .span-date input {
@@ -674,26 +648,22 @@ a {
   display: flex;
   width: 457px;
   justify-content: space-between;
-  outline: 1px solid #ff8800;
 }
 
 .numbers {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid #ff8800;
 }
 
 .numbers-1 {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid #ff8800;
   width: 225px;
 }
 
 .numbers-2 {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid #ff8800;
   width: 178px;
 }
 
@@ -705,13 +675,13 @@ a {
   text-align: center;
   box-sizing: border-box;
   padding-top: 15px;
-  outline: 1px solid #ff8800;
 }
 
 .button-wrapper {
   box-sizing: border-box;
   margin-top: 55px;
-  margin-left: 55px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Подвал*/
@@ -726,26 +696,28 @@ a {
   display: flex;
   justify-content: space-between;
   margin-top: 32px;
-  outline: 1px solid #ff8800;
+}
+
+.relative-position {
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-footer {
   position: absolute;
   bottom: 0;
-  left: 33px;
   opacity: 0.9;
-  outline: 1px solid #ff8800;
 }
 
 .footer-hashtag {
   align-self: center;
   margin-left: 132px;
-  outline: 1px solid #ff8800;
 }
 
 .footer-social {
   align-self: center;
-  outline: 1px solid #ff8800;
 }
 
 .social-buttons {
@@ -757,7 +729,6 @@ a {
 .footer-copyright {
   align-self: center;
   margin-right: 100px;
-  outline: 1px solid #ff8800;
 }
 
 /*------------------Внутренняя страница----------------*/
@@ -777,7 +748,6 @@ a {
   width: 1056px;
   min-height: 160px;
   display: flex;
-  outline: 1px solid orange;
 }
 
 .fieldset {
@@ -786,7 +756,6 @@ a {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 1px solid #e50fab;
 }
 
 .housing {
@@ -800,7 +769,6 @@ a {
   justify-content: space-between;
   margin-top: 4px;
   box-sizing: border-box;
-  outline: 1px solid #e50fab;
 }
 
 .pricing {
@@ -819,7 +787,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  outline: 1px solid blue;
 }
 
 .tools-wrap-2 {
@@ -828,7 +795,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
   min-height: 98px;
-  outline: 1px solid black;
 }
 /*Блок "От-до"*/
 
@@ -837,19 +803,16 @@ a {
   width: 100%;
   min-height: 20px;
   margin-top: 5px;
-  outline: 1px solid #e50fab;
 }
 
 .number-wrap {
   display: flex;
   width: 158px;
   box-sizing: border-box;
-  outline: 1px solid green;
 }
 
 .from {
   padding-left: 65px;
-  border-right: 2px solid white;
 }
 
 .to {
@@ -887,7 +850,6 @@ a {
   margin: auto;
   padding-top: 18px;
   box-sizing: border-box;
-  outline: 1px solid #e27500;
 }
 
 .sort-list {
@@ -896,7 +858,6 @@ a {
   justify-content: space-between;
   padding: 0px;
   margin-left: 40px;
-  outline: 1px solid #e50fab;
 }
 
 .header-wrapper span {
@@ -914,7 +875,6 @@ a {
   width: 1200px;
   min-height: 150px;
   border-top: 1px solid #e5e5e5;
-  outline: 1px solid orange;
 }
 
 .result {
@@ -927,7 +887,6 @@ a {
   align-items: center;
   padding: 0;
   box-sizing: border-box;
-  outline: 1px solid #e27500;
 }
 
 .more-info {
@@ -936,7 +895,6 @@ a {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
-  outline: 1px solid pink;
 }
 
 .more-info h2 {
@@ -948,7 +906,6 @@ a {
   display: flex;
   justify-content: space-between;
   width: 181px;
-  outline: 1px solid #e27500;
 }
 
 .rating {
@@ -959,7 +916,6 @@ a {
   justify-content: flex-end; /*Когда вставлю звёздочки, то изменю на
   justify-content: space-between;*/
   margin-left: auto;
-  outline: 1px solid #e27500;
 }
 
 /*Кнопки*/
