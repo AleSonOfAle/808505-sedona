@@ -64,7 +64,7 @@ a {
   color: #cacaca;
 }
 
-.present-page {
+.active {
   color: #766357;
 }
 
@@ -196,19 +196,6 @@ a {
   background-color: #ffffff;
 }
 
-.social-buttons a {
-  background-color: #81b3d2;
-}
-
-.social-buttons a:hover {
-   background-color: #669ec0;
-}
-
-.social-buttons a:focus {
-  color: #88b6d1;
-  background-color: #5496bd;
-}
-
 .footer {
   background-color: #ffffff;
   margin: auto;
@@ -312,16 +299,12 @@ a {
   border-bottom: 1px #81b3d2 dotted;
 }
 
-.sort-list a:active {
-  color: #81b3d2;
-  border: none;
-}
-
 .sort-list a:hover {
   color: #81b3d2;
 }
 
 .sort-list a:focus {
+  border: none;
   color: #000000;
 }
 
@@ -403,19 +386,49 @@ a {
   color: #333333;
 }
 
-.rating-span {
+.rating span {
+  display: block;
   width: 110px;
   height: 27px;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-  padding-top: 3px;
+  padding-top: 4px;
   padding-left: 1px;
+  vertical-align: middle;
   box-sizing: border-box;
   color: #666666;
   background-color: #f2f2f2;
 }
+
+.rating span::before {
+  content: "";
+
+  width: 70px;
+  height: 18px;
+
+  position: absolute;
+  bottom: 72px;
+  right: 0;
+
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+}
+
+.amara-rating span::before {
+  width: 73px;
+}
+
+.desert-rating span::before {
+  width: 55px;
+}
+
+.villas-rating span::before {
+  width: 37px;
+}
+
 
 .site-navigation,
 .reasons-list,
@@ -564,13 +577,42 @@ a {
 }
 
 .features-list h2 {
-  margin-top: 160px;
+  padding-top: 145px;
+  position: relative;
+}
+
+.features-list h2::before {
+  content:"";
+
+  position: absolute;
+  left: 163px;
+  bottom: 42px;
+
+  width: 80px;
+  height: 80px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-1 h2::before {
+  background-image: url("../img/icon-1.svg");
+}
+
+.feature-2 h2::before {
+  background-image: url("../img/icon-3.svg");
+}
+
+.feature-3 h2::before {
+  left: 167px;
+  bottom: 47px;
+  background-image: url("../img/icon-2.svg");
 }
 
 .features-list p {
   width: 288px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 23px;
 }
 
 /*Предложение*/
@@ -594,6 +636,7 @@ a {
   position: absolute;
   left: 316px;
   bottom: 198px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.22), 0 10px 30px rgba(0,0,0,0.22);
 }
 
 .search-form-wrapper {
@@ -627,10 +670,11 @@ a {
   align-content: space-between;
   flex-wrap: wrap;
   width: 458px;
-  min-height: 172px;
+  height: 172px;
   margin: auto;
   margin-top: 55px;
   margin-bottom: 56px;
+  position: relative;
 }
 
 .input-wrapper span {
@@ -681,14 +725,15 @@ a {
   width: 1200px;
   display: flex;
   justify-content: space-between;
-  margin-top: 32px;
+  margin-top: 23px;
 }
 
-.relative-position {
+.main-container {
   position: relative;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  box-shadow: 0 5px 40px rgba(0,0,0,0.25), 0 10px 40px rgba(0,0,0,0.22);
 }
 
 .main-footer {
@@ -699,17 +744,19 @@ a {
 
 .footer-hashtag {
   align-self: center;
-  margin-left: 132px;
+  margin-left: 133px;
 }
 
-.footer-social {
+.social-buttons {
   align-self: center;
 }
 
 .social-buttons {
   width: 150px;
   display: flex;
-  padding:0;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 30px;
 }
 
 .footer-copyright {
@@ -755,7 +802,7 @@ a {
 }
 
 .variants {
-  min-height: 116px;
+  min-height: 110px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -846,11 +893,64 @@ a {
   display: flex;
   justify-content: space-between;
   padding: 0px;
+  padding-right: 540px;
   margin-left: 40px;
+  position: relative;
+}
+
+.cheapest-first::after {
+  content: "";
+
+  position: absolute;
+  right: 0;
+  top: 7px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cheapest-first:hover::after {
+  background-image: url("../img/icon-down-dir-hover.svg");
+}
+
+.cheapest-first:focus::after {
+  background-image: url("../img/icon-down-dir-focus.svg");
+}
+
+.expensive-first::after {
+  content: "";
+  display: inline;
+
+  position: absolute;
+  left: 742px;
+  top: 8px;
+
+  width: 12px;
+  height: 12px;
+
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.expensive-first:hover::after {
+  background-image: url("../img/icon-up-dir-hover.svg");
+}
+
+.expensive-first:focus::after {
+  background-image: url("../img/icon-up-dir-focus.svg");
 }
 
 .header-wrapper span {
-  margin-left: 48px;
+  margin-left: 44px;
+}
+
+.header-wrapper b {
+  min-width: 120px;
 }
 
 /*Результаты поиска*/
@@ -902,9 +1002,9 @@ a {
   height: 90px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /*Когда вставлю звёздочки, то изменю на
-  justify-content: space-between;*/
+  justify-content: flex-end;
   margin-left: auto;
+  position: relative;
 }
 
 /*Кнопки*/
@@ -920,4 +1020,127 @@ a {
 .inner-footer {
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
+}
+
+.social {
+  display: block;
+  width: 46px;
+  height: 46px;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tw-icon {
+  background-image: url("../img/twitter.svg");
+}
+
+.fb-icon {
+  background-image: url("../img/fb-icon.svg");
+}
+
+.yt-icon {
+  background-image: url("../img/youtube.svg");
+}
+
+.social:hover {
+   background-color: #669ec0;
+}
+
+.social:focus {
+  background-color: #5496bd;
+}
+
+.tw-icon:focus {
+  background-image: url("../img/twitter-active.svg");
+}
+
+.yt-icon:focus {
+  background-image: url("../img/youtube-active.svg");
+}
+
+.fb-icon:focus {
+  background-image: url("../img/fb-icon-active.svg");
+}
+
+.button-copyright {
+  display: inline-block;
+  vertical-align: middle;
+
+  width: 115px;
+  height: 45px;
+
+  margin-left: 5px;
+  background-image: url("../img/logo-htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-copyright:hover {
+  background-image: url("../img/logo-htmlacademy-hover.svg");
+}
+
+.button-copyright:focus {
+  background-image: url("../img/logo-htmlacademy-focus.svg");
+}
+
+/*Чекбоксы*/
+
+.input-check {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  cursor: pointer;
+}
+.input-check input {
+  width: 30px;
+  height: 25px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 10;
+  opacity: 0;
+}
+.input-check label {
+  display: block;
+  padding-left: 40px;
+  position: relative;
+  z-index: 1;
+}
+.input-check label:before {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 25px;
+  background: url("../img/checkbox-off.svg") no-repeat;
+  z-index: 5;
+  content: '';
+  cursor: pointer;
+}
+.input-check input:checked + label:before {
+  background: url("../img/checkbox-onv.svg") no-repeat;
+}
+
+.dates span:first-of-type::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 427px;
+  cursor: pointer;
+
+  background-image: url("../img/calendar.svg");
+}
+
+.dates span:first-of-type:hover::before {
+  background-image: url("../img/calendar-hover.svg");
+}
+
+.dates span:first-of-type:active::before {
+  background-image: url("../img/calendar-focus.svg");
 }
