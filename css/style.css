@@ -23,7 +23,8 @@ a {
   text-transform: uppercase;
   text-align: center;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   background-color: #81b3d2;
   border: none;
@@ -258,7 +259,8 @@ a {
   border-radius: 3px;
   cursor: pointer;
   margin-left: 85px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .price-range-box {
@@ -266,9 +268,14 @@ a {
   margin-top: -20px;
   border: 2px solid #ffffff;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
-  box-sizing: border-box;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .inner-page button:hover {
@@ -335,7 +342,8 @@ a {
   width: 110px;
   height: 26px;
   padding-top: 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #81b3d2;
   border: none;
 }
@@ -353,7 +361,8 @@ a {
   width: 142px;
   height: 26px;
   padding-top: 2px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #766357;
   border: none;
 }
@@ -397,7 +406,8 @@ a {
   padding-top: 4px;
   padding-left: 1px;
   vertical-align: middle;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #666666;
   background-color: #f2f2f2;
 }
@@ -453,9 +463,15 @@ a {
 /*Хэдер*/
 
 .main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   width: 1200px;
   height: 70px;
   margin: 0;
@@ -464,13 +480,17 @@ a {
 }
 
 .site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
-  align-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   min-height: 56px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: white;
 }
 
@@ -479,7 +499,8 @@ a {
   text-align: center;
   margin: 0;
   padding-top: 14px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .logo {
@@ -511,20 +532,26 @@ a {
 .reasons-to-visit-sedona {
   width: 1200px;
   margin: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reasons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 1200px;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .reasons-list li {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 400px;
   height: 256px;
 }
@@ -564,11 +591,14 @@ a {
 /*Преимущества Седоны*/
 
 .features-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
   min-height: 330px;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .features-list li {
@@ -622,7 +652,8 @@ a {
   min-height: 883px;
   margin: auto;
   padding-top: 50px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
@@ -636,14 +667,16 @@ a {
   position: absolute;
   left: 316px;
   bottom: 198px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.22), 0 10px 30px rgba(0,0,0,0.22);
+  -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.22), 0 10px 30px rgba(0,0,0,0.22);
+          box-shadow: 0 10px 30px rgba(0,0,0,0.22), 0 10px 30px rgba(0,0,0,0.22);
 }
 
 .search-form-wrapper {
   width: 570px;
   min-height: 480px;
   margin: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 0;
 }
 
@@ -655,7 +688,8 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-top: 28px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #766357;
 }
 
@@ -664,11 +698,20 @@ a {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 458px;
   height: 172px;
   margin: auto;
@@ -678,7 +721,8 @@ a {
 }
 
 .input-wrapper span {
-  align-self: baseline;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   padding: 0;
 }
 
@@ -686,7 +730,8 @@ a {
   width: 345px;
   min-height: 38px;
   padding-left: 15px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .span-number input {
@@ -696,22 +741,34 @@ a {
 }
 
 .dates {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 457px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 
 .numbers-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 225px;
   position: relative;
 }
 
 .numbers-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 178px;
   position: relative;
 }
@@ -823,7 +880,8 @@ a {
 
 .input-wrapper input {
   padding-left: 13px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Подвал*/
@@ -835,8 +893,12 @@ a {
 
 .footer-wrapper {
   width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 23px;
 }
 
@@ -845,7 +907,8 @@ a {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0 5px 40px rgba(0,0,0,0.25), 0 10px 40px rgba(0,0,0,0.22);
+  -webkit-box-shadow: 0 5px 40px rgba(0,0,0,0.25), 0 10px 40px rgba(0,0,0,0.22);
+          box-shadow: 0 5px 40px rgba(0,0,0,0.25), 0 10px 40px rgba(0,0,0,0.22);
 }
 
 .main-footer {
@@ -855,24 +918,34 @@ a {
 }
 
 .footer-hashtag {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-left: 133px;
 }
 
 .social-buttons {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .social-buttons {
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0;
   margin-left: 30px;
 }
 
 .footer-copyright {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-right: 100px;
 }
 
@@ -897,16 +970,24 @@ a {
   margin-top: -14px;
   margin-left: auto;
   margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0;
   margin: 0;
   margin-top: 28px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .housing {
@@ -915,11 +996,19 @@ a {
 
 .variants {
   min-height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 4px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .pricing {
@@ -934,27 +1023,45 @@ a {
   min-height: 157px;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-sizing: border-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .tools-wrap-2 {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 98px;
 }
 
 /*Блок "От-до"*/
 
 .number-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 155px;
   margin: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .number-wrap:first-child {
@@ -971,7 +1078,8 @@ a {
   width: 45px;
   height: 21px;
   margin-left: 3px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Ползунок*/
@@ -979,7 +1087,8 @@ a {
 .pricerange {
   width: 100%;
   margin-top: -10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*Сортировка результатов*/
@@ -993,17 +1102,26 @@ a {
 .header-wrapper {
   width: 1056px;
   min-height: 85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: baseline;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   margin: auto;
   padding-top: 18px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .sort-list {
   width: 238px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0px;
   padding-right: 540px;
   margin-left: 40px;
@@ -1083,19 +1201,32 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .more-info {
   width: 258px;
   min-height: 94px;
   margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .more-info h2 {
@@ -1104,17 +1235,28 @@ a {
 
 .description {
   margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 181px;
 }
 
 .rating {
   width: 110px;
   height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   margin-left: auto;
   position: relative;
 }
@@ -1123,15 +1265,20 @@ a {
 
 .options {
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*Футер*/
 
 .inner-footer {
   border-top: 1px solid #e5e5e5;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .social {
@@ -1236,4 +1383,12 @@ a {
 }
 .input-check input:checked + label:before {
   background: url("../img/checkbox-onv.svg") no-repeat;
+}
+
+.input-check input:disabled + label:before {
+  background: url("../img/checkbox-off-disabled.svg") no-repeat;
+}
+
+.input-check input:checked:disabled + label:before {
+  background: url("../img/checkbox-on-disabled.svg") no-repeat;
 }

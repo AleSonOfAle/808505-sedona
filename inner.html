@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
 
   <body class="inner-page">
@@ -32,7 +33,6 @@
         <fieldset class="fieldset structure">
           <legend>Инфраструктура:</legend><br>
           <div class="variants">
-          <!--<input type="checkbox" id="swimming-pool" name="swimming-pool" checked><label for="swimming-pool">Бассейн</label>-->
           <div class="input-check">
 	        <input type="checkbox" id="swimming-pool" name="swimming-pool" checked/><label for="swimming-pool">Бассейн</label></div><br>
           <div class="input-check">
@@ -59,8 +59,8 @@
             <div class="tools-wrap-2">
           <legend>Стоимость в сутки (Р):</legend><br>
           <div class="price-range-box">
-                <span class="number-wrap">От<input class="input" type="number" min="0" max="3000" name="price-min" placeholder="0"/></span>
-                <span class="number-wrap">До<input class="input" type="number" min="0" max="3000" name="price-max" placeholder="3000"/></span>
+                <label class="number-wrap">От<input class="input" type="number" min="0" max="3000" name="price-min" placeholder="0" required/></label>
+                <label class="number-wrap">До<input class="input" type="number" min="0" max="3000" name="price-max" placeholder="3000" required/></label>
           </div><br>
             <input class="pricerange" type="range" name="pricerange" min="0" max="3000">
         </div>
