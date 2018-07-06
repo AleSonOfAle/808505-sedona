@@ -23,14 +23,14 @@
          <li><a href="inner.html">Гостиницы</a></li>
         </ul>
     </nav>
-    <img class="logo" src="img/index-logo.png" width="138px" height="70px" alt="Логотип">
+    <img class="logo" src="img/index-logo.png" width="138" height="70" alt="Логотип">
   </header>
 
-    <main class="container">
+    <main>
 
       <h1 class="visually-hidden">Седона</h1>
 
-      <div class="sedona"><img src="img/main-page-photo.jpg" width="1200px" height="508px" alt="Добро пожаловать в Седону!"></div>
+      <div class="sedona"><img src="img/main-page-photo.jpg" width="1200" height="508" alt="Добро пожаловать в Седону!"></div>
 
       <section class="intro">
         <div class="intro-text">
@@ -41,13 +41,14 @@
 
     <section class="reasons-to-visit-sedona">
       <ul class="reasons-list">
+
         <li class="reason reason-1">
           <h2>Настоящий городок</h2>
           <span>&mdash; №1 &mdash;</span>
           <p>Седона – не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
-          <img class="reason-1-photo" img src="img/sedona-town.jpg" width="800" height="256" alt="Город Седона">
-
+          <li class="reason-photo"><img src="img/sedona-town.jpg" width="800" height="256" alt="Город Седона"></li>
+      </ul>
 
           <ul class="features-list">
             <li class="feature-1">
@@ -64,13 +65,13 @@
             </li>
           </ul>
 
-        <img class="reason-2-photo" src="img/devils-bridge.jpg" width="800" height="256" alt="Мост Дьявола">
+        <ul class="reasons-list">
+        <li class="reason-photo"><img src="img/devils-bridge.jpg" width="800" height="256" alt="Мост Дьявола"></li>
         <li class="reason reason-2">
           <h2>Там есть Мост Дьявола</h2>
           <span>&mdash; №2 &mdash;</span>
           <p>Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
         </li>
-
 
         <li class="reason reason-3">
           <h2>Небольшая площадь</h2>
@@ -87,7 +88,9 @@
           <span>&mdash; №5 &mdash;</span>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </li>
+
       </ul>
+
     </section>
 
     <div class="offer">
@@ -102,33 +105,25 @@
 
         <div class="input-wrapper">
 
-          <label>
             <div class="dates">
-               <span>Дата заезда:</span>
-               <span class="span-date"><input class="input" type="date" name="arrival date" required></span>
+              <label for="arrival-date">Дата заезда:</label>
+              <input class="input" type="date" id="arrival-date" name="arrival date" required/>
             </div>
-          </label>
 
-          <label>
             <div class="dates">
-               <span>Дата выезда:</span>
-               <span class="span-date"><input class="input" type="date" name="departure date" required></span>
+               <label for="departure-date">Дата выезда:</label>
+               <input class="input" type="date" id="departure-date" name="departure date" required/>
             </div>
-          </label>
 
-          <label>
-            <div class="numbers-1">
-               <span>Взрослые:</span>
-               <span class="span-number"><input class="input" type="number" name="adults" min="0" value="2"></span>
+            <div class="numbers numbers-1">
+               <label for="adults">Взрослые:</label>
+               <span><input class="input" type="number" id="adults" name="adults" min="0" value="2"/></span>
             </div>
-          </label>
 
-          <label>
-            <div class="numbers-2">
-               <span>Дети:</span>
-               <span class="span-number"><input class="input" type="number" name="children" min="0" value="0"></span>
+            <div class="numbers numbers-2">
+               <label for="children">Дети:</label>
+               <span><input class="input" type="number" id="children" name="children" min="0" value="0"/></span>
             </div>
-          </label>
 
       </div>
 

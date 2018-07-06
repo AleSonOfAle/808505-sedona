@@ -475,8 +475,7 @@ a {
   width: 1200px;
   height: 70px;
   margin: 0;
-  background-color: transparent;s
-  outline: 1px solid #ff8800;
+  background-color: transparent;
 }
 
 .site-navigation {
@@ -549,10 +548,15 @@ a {
           box-sizing: border-box;
 }
 
-.reasons-list li {
+.reasons-list li:not(.reason-photo) {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 400px;
+  height: 256px;
+}
+
+.reason-photo {
+  width: 800px;
   height: 256px;
 }
 
@@ -597,6 +601,7 @@ a {
   width: 1200px;
   min-height: 330px;
   padding: 0;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -607,6 +612,7 @@ a {
 }
 
 .features-list h2 {
+  text-align: center;
   padding-top: 145px;
   position: relative;
 }
@@ -640,6 +646,7 @@ a {
 }
 
 .features-list p {
+  text-align: center;
   width: 288px;
   margin: auto;
   margin-top: 23px;
@@ -726,7 +733,7 @@ a {
   padding: 0;
 }
 
-.span-date input {
+.dates input {
   width: 345px;
   min-height: 38px;
   padding-left: 15px;
@@ -734,7 +741,8 @@ a {
           box-sizing: border-box;
 }
 
-.span-number input {
+.numbers input {
+  display: inline-block;
   width: 112px;
   min-height: 35px;
   text-align: center;
@@ -745,6 +753,9 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 457px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -755,6 +766,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -766,6 +780,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -777,7 +794,7 @@ a {
 
 /*значок календаря*/
 
-.dates span:first-of-type::before {
+.dates label::before {
   content: "";
   width: 22px;
   height: 22px;
@@ -788,17 +805,17 @@ a {
   background-image: url("../img/calendar.svg");
 }
 
-.dates span:first-of-type:hover::before {
+.dates label:hover::before {
   background-image: url("../img/calendar-hover.svg");
 }
 
-.dates span:first-of-type:active::before {
+.dates label:active::before {
   background-image: url("../img/calendar-focus.svg");
 }
 
 /*значки +/-*/
 
-.numbers-1 span:first-of-type::after {
+.numbers-1 label::before {
   content: "—";
   display: inline-block;
   position: absolute;
@@ -809,15 +826,15 @@ a {
   color: #a9a9a9;
 }
 
-.numbers-1 span:first-of-type:hover::after {
+.numbers-1 label:hover::before {
   color: #000000;
 }
 
-.numbers-1 span:first-of-type:active::after {
+.numbers-1 label:active::before {
   color: #81b3d2;
 }
 
-.span-number::after {
+.numbers-1 span::after {
   content: "+";
   display: inline-block;
   position: absolute;
@@ -829,17 +846,17 @@ a {
   color: #a9a9a9;
 }
 
-.span-number:hover::after {
+.numbers-1 span:hover::after {
   color: #000000;
 }
 
-.span-number:active::after {
+.numbers-1 span:active::after {
   color: #81b3d2;
 }
 
 
 
-.numbers-2 span:first-of-type::after {
+.numbers-2 label::before {
   content: "—";
   display: inline-block;
   position: absolute;
@@ -850,15 +867,15 @@ a {
   color: #a9a9a9;
 }
 
-.numbers-2 span:first-of-type:hover::after {
+.numbers-2 label:hover::before {
   color: #000000;
 }
 
-.numbers-2 span:first-of-type:active::after {
+.numbers-2 label:active::before {
   color: #81b3d2;
 }
 
-.numbers-2 .span-number::after {
+.numbers-2 span::after {
   content: "+";
   display: inline-block;
   position: absolute;
@@ -870,11 +887,11 @@ a {
   color: #a9a9a9;
 }
 
-.numbers-2 .span-number:hover::after {
+.numbers-2 span:hover::after {
   color: #000000;
 }
 
-.numbers-2 .span-number:active::after {
+.numbers-2 span:active::after {
   color: #81b3d2;
 }
 
@@ -1020,8 +1037,8 @@ a {
 }
 
 .tools-wrap {
-  min-height: 157px;
-  margin: 0;
+  min-height: 105px;
+  margin-top: 30px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1049,7 +1066,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 98px;
+  min-height: 40px;
 }
 
 /*Блок "От-до"*/
