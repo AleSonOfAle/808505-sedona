@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -1140,16 +1141,36 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px;
-  padding-right: 540px;
-  margin-left: 40px;
+}
+
+.arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35px;
+  padding: 0;
+  padding-top: 8px;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
 }
 
-.cheapest-first::after {
+.sort-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 780px;
+}
+
+.expensive-first::after {
   content: "";
 
   position: absolute;
-  right: 0;
+  left: 23px;
   top: 7px;
 
   width: 12px;
@@ -1160,21 +1181,20 @@ a {
   background-position: 0 0;
 }
 
-.cheapest-first:hover::after {
+.expensive-first:hover::after {
   background-image: url("../img/icon-down-dir-hover.svg");
 }
 
-.cheapest-first:focus::after {
+.expensive-first:focus::after {
   background-image: url("../img/icon-down-dir-focus.svg");
 }
 
-.expensive-first::after {
+.cheapest-first::after {
   content: "";
   display: inline;
 
   position: absolute;
-  left: 742px;
-  top: 8px;
+
 
   width: 12px;
   height: 12px;
@@ -1184,11 +1204,11 @@ a {
   background-position: 0 0;
 }
 
-.expensive-first:hover::after {
+.cheapest-first:hover::after {
   background-image: url("../img/icon-up-dir-hover.svg");
 }
 
-.expensive-first:focus::after {
+.cheapest-first:focus::after {
   background-image: url("../img/icon-up-dir-focus.svg");
 }
 
@@ -1231,6 +1251,10 @@ a {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.result-wrapper:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .more-info {
@@ -1293,15 +1317,20 @@ a {
 /*Футер*/
 
 .inner-footer {
-  border-top: 1px solid #e5e5e5;
+  min-height: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.footer-wrapper {
+  margin: 0;
+  padding-top: 21px;
 }
 
 .social {
   display: block;
   width: 46px;
-  height: 46px;
+  height: 48px;
   background-color: #81b3d2;
   background-repeat: no-repeat;
   background-position: center;
